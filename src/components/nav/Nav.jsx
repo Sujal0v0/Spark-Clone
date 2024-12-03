@@ -90,8 +90,8 @@ const Nav = () => {
                   FAQ
                 </a>
               </div>
-              <div className="hvr-animation bg-buttonGreen cursor-pointer hidden rounded-full sm:flex items-center justify-center pl-5 py-2 gap-5">
-                Get template
+              <div className="hvr-animation bg-buttonGreen cursor-pointer hidden rounded-full sm:flex items-center justify-center pl-5 py-2 lg:gap-5 gap-3">
+                <div>Get template</div>
                 <div className="h-[30px] w-[30px] bg-white rounded-full flex items-center justify-center mr-2">
                   <img src="/right-arrow.svg" className="h-[20px] w-[20px]" />
                 </div>
