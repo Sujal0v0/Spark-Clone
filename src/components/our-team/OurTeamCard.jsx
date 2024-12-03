@@ -1,8 +1,12 @@
 const OurTeamCard = ({ position, name, description, imgLocation }) => {
   return (
-    <div className="h-[340px] w-[545px] bg-white rounded-2xl flex gap-5">
+    <div className="xs:h-[340px] w-[545px] bg-white rounded-2xl flex xs:gap-8 gap-4 xs:py-0 py-2">
       <div>
-        <img src={imgLocation} alt="" className="h-[340px]" />
+        <img
+          src={imgLocation}
+          alt=""
+          className="sm:h-[340px] xs:h-[300px] xs:w-full w-[200px] sm:p-6 xs:p-4 p-2"
+        />
       </div>
       <div className="flex flex-col gap-4 w-1/3 justify-center">
         <div className="md:text-base text-sm font-light">{position}</div>

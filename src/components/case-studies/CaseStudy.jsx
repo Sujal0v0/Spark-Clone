@@ -1,3 +1,4 @@
+import ContactUs from "../Button/ContactUs";
 import CaseCard from "./CaseCard";
 
 const CaseStudy = () => {
@@ -18,12 +19,7 @@ const CaseStudy = () => {
           Discover how we&apos;ve helped businesses scale and innovate with Web3
           technology.
         </div>
-        <div className="w-[165px] bg-buttonGreen rounded-full flex items-center justify-center pl-5 py-2 gap-5">
-          <div className="text-medium text-base">Contact us</div>
-          <div className="h-[30px] w-[30px] bg-white rounded-full flex items-center justify-center mr-2">
-            <img src="/right-arrow.svg" className="h-[20px] w-[20px]" alt="" />
-          </div>
-        </div>
+        <ContactUs />
       </div>
       <div className="flex items-center justify-center flex-col gap-6 lg:w-[100%] w-[100%]">
         <CaseCard

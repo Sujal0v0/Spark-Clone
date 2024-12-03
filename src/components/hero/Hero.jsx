@@ -1,8 +1,9 @@
+import ContactUs from "../Button/ContactUs.jsx";
 const Hero = () => {
   return (
     <div
       id="hero"
-      className="lg:text-6xl sm:text-5xl text-5xl text-black w-[100vw] flex items-center justify-center flex-col sm:gap-10 gap-5 mt-[100px] md:py-[150px] sm:py-48 py-44 mb-5"
+      className="lg:text-6xl sm:text-5xl text-5xl text-black w-[100vw] flex items-center justify-center flex-col sm:gap-10 gap-5 mt-[100px] md:py-[190px] sm:py-52 py-48 mb-5"
     >
       <div className="flex items-center justify-center flex-col gap-5 text-center">
         <div className="darker px-3">Revolutionize Your Operations</div>
@@ -14,12 +15,7 @@ const Hero = () => {
         </div>
         <div className="px-3">smart contracts, and more.</div>
       </div>
-      <div className="bg-buttonGreen rounded-full flex items-center justify-center pl-5 py-2 gap-5">
-        <div className="text-medium text-base">Contact us</div>
-        <div className="h-[30px] w-[30px] bg-white rounded-full flex items-center justify-center mr-2">
-          <img src="/right-arrow.svg" className="h-[20px] w-[20px]" alt="" />
-        </div>
-      </div>
+      <ContactUs />
     </div>
   );
 };

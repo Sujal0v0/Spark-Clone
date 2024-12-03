@@ -14,7 +14,7 @@ const Testimonials = () => {
         Real feedback from companies we&apos;ve helped grow.
       </div>
       <div className="fade">
-        <div className="flex gap-4 p-5">
+        <div className="flex gap-6 p-5">
           <TestimonialsCard
             comment="Spark's blockchain solutions transformed our supply chain
           efficiency. Their expertise is truly unmatched."

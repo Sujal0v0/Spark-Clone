@@ -52,7 +52,7 @@ body {
 
 /* Sweep animation from github */
 .hvr-animation {
-  display: block;
+  display: flex;
   background: linear-gradient(to right, #a0c313 50%, #cbed42 50%);
   background-size: 200% 100%;
   background-position: right bottom;

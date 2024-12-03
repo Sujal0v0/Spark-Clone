@@ -1,3 +1,4 @@
+import ContactUs from "../Button/ContactUs";
 import WhyusCard from "./WhyusCard";
 
 const WhyUs = () => {
@@ -34,12 +35,7 @@ const WhyUs = () => {
           we offer end-to-end support to ensure"
         />
       </div>
-      <div className="w-[165px] bg-buttonGreen rounded-full flex items-center justify-center pl-5 py-2 gap-5">
-        <div className="text-medium text-base">Contact us</div>
-        <div className="h-[30px] w-[30px] bg-white rounded-full flex items-center justify-center mr-2">
-          <img src="/right-arrow.svg" className="h-[20px] w-[20px]" alt="" />
-        </div>
-      </div>
+      <ContactUs />
     </div>
   );
 };

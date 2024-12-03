@@ -6,11 +6,22 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Nav = () => {
-  const Hero = () => {
+  const Hero = (e) => {
+    e.preventDefault();
     window.scroll({
       top: 0,
       behavior: "smooth",
     });
+  };
+  const smoothScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
   };
   return (
     <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-50">
@@ -32,7 +43,12 @@ const Nav = () => {
             </DisclosureButton>
           </div>
           <div className=" flex flex-1 items-center justify-center sm:items-center sm:justify-between sm:mx-2">
-            <div onClick={Hero} className="flex shrink-0 items-center">
+            <div
+              onClick={(e) => {
+                Hero(e);
+              }}
+              className="flex shrink-0 items-center"
+            >
               <img
                 alt="Your Company"
                 src="/sparklogo.PNG"
@@ -40,11 +56,39 @@ const Nav = () => {
               />
             </div>
             <div className="sm:flex sm:items-center sm:justify-around md:gap-24 hidden">
-              <div className="sm:flex sm:items-center sm:justify-around md:gap-10 gap-5 hidden md:pr-2 pr-36">
-                <a href="#about-us">About</a>
-                <a href="#services">Services</a>
-                <a href="#testimonials">Results</a>
-                <a href="#faqs">FAQ</a>
+              <div className="sm:flex sm:items-center sm:justify-around md:gap-10 gap-5 hidden pr-16">
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    smoothScroll(e, "about-us");
+                  }}
+                >
+                  About
+                </a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    smoothScroll(e, "services");
+                  }}
+                >
+                  Services
+                </a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    smoothScroll(e, "testimonials");
+                  }}
+                >
+                  Results
+                </a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    smoothScroll(e, "faqs");
+                  }}
+                >
+                  FAQ
+                </a>
               </div>
               <div className="hvr-animation bg-buttonGreen cursor-pointer hidden rounded-full sm:flex items-center justify-center pl-5 py-2 gap-5">
                 Get template
@@ -63,6 +107,9 @@ const Nav = () => {
           <DisclosureButton
             as="a"
             href="#"
+            onClick={(e) => {
+              smoothScroll(e, "about-us");
+            }}
             className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
           >
             About
@@ -70,6 +117,9 @@ const Nav = () => {
           <DisclosureButton
             as="a"
             href="#"
+            onClick={(e) => {
+              smoothScroll(e, "services");
+            }}
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
           >
             Services
@@ -77,13 +127,19 @@ const Nav = () => {
           <DisclosureButton
             as="a"
             href="#"
+            onClick={(e) => {
+              smoothScroll(e, "testimonials");
+            }}
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
           >
-            Results
+            Testimonials
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
+            onClick={(e) => {
+              smoothScroll(e, "faqs");
+            }}
             className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
           >
             FAQ
