@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.backdrop {
+  backdrop-filter: blur(6px);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.darker {
+  text-shadow: 1px 0 #1d1f13;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: "Manrope", serif;
+}
+
+.fade {
+  overflow: hidden;
+  width: 70%;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 70%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 70%,
+    transparent
+  );
+}
+.fade .flex {
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(10%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left */
+  }
+}
+
+/* Sweep animation from github */
+.hvr-animation {
+  display: block;
+  background: linear-gradient(to right, #a0c313 50%, #cbed42 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.hvr-animation:hover {
+  background-position: left bottom;
+}

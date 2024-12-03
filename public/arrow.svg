@@ -1,0 +1,8 @@
+<svg width="41" height="25" viewBox="0 0 41 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.5 4.5C4.5 4.5 20 20.5 20.5 20.5C21 20.5 36.5 4.5 36.5 4.5" 
+          stroke="#1A1A19" 
+          stroke-width="8" 
+          stroke-linecap="round" 
+          class="group-hover:stroke-blue-500 transition-colors duration-300"/>
+</svg>
+
