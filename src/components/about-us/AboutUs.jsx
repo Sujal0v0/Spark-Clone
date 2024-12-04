@@ -1,7 +1,7 @@
 import ContactUs from "../Button/ContactUs.jsx";
 const AboutUs = () => {
   return (
-    <div id="about-us" className="mx-auto">
+    <article id="about-us" className="mx-auto">
       <div className="sm:text-5xl text-5xl text-black w-[100vw] md:h-[120vh] flex md:flex-nowrap items-center justify-center lg:gap-[150px] gap-20 flex-wrap pb-20 px-20">
         <div className="flex flex-col md:gap-20 gap-10 justify-center">
           <div className="rounded-full border-buttonBorder border-[1px] border-solid bg-backgroundGray1 text-sm text-light flex items-center justify-center p-2 w-[95px] md:mx-0 mx-auto">
@@ -29,7 +29,7 @@ const AboutUs = () => {
           />
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
