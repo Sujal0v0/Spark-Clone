@@ -7,13 +7,13 @@ const Hero = () => {
     >
       <img
         src="/left.PNG"
-        alt=""
-        className="transform lg:scale-100 md:scale-75 scale-50 absolute lg:left-0 md:-left-6 -left-12"
+        alt="left"
+        className="lg:w-[160px] md:w-[142px] xs:w-[80px] w-[50px] absolute left-0 md:bottom-48 bottom-12 "
       />
       <img
         src="/right.PNG"
-        alt=""
-        className=" lg:w-[160px] md:w-[142px] w-[80px] absolute right-0"
+        alt="right"
+        className=" lg:w-[150px] md:w-[132px] xs:w-[70px] w-[50px] absolute right-0 md:bottom-48 bottom-12 "
       />
       <div className="flex items-center justify-center flex-col gap-5 text-center">
         <div className="darker px-3 z-10">Revolutionize Your Operations</div>

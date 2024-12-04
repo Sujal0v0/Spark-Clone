@@ -24,7 +24,7 @@ const AboutUs = () => {
         <div className="flex justify-center items-center">
           <img
             src="/spark1.PNG"
-            alt=""
+            alt="spark1"
             className="lg:w-[80%] md:w-[100%] w-[80%] mb-5"
           />
         </div>

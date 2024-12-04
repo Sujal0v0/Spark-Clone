@@ -50,11 +50,7 @@ const Nav = () => {
                 }}
                 className="flex shrink-0 items-center"
               >
-                <img
-                  alt="Your Company"
-                  src="/sparklogo.PNG"
-                  className="h-8 w-auto"
-                />
+                <img alt="Spark" src="/sparklogo.PNG" className="h-8 w-auto" />
               </div>
               <div className="sm:flex sm:items-center sm:justify-around md:gap-24 hidden">
                 <div className="sm:flex sm:items-center sm:justify-around md:gap-10 gap-5 hidden pr-16">
@@ -94,7 +90,11 @@ const Nav = () => {
                 <div className="hvr-animation bg-buttonGreen cursor-pointer hidden rounded-full sm:flex items-center justify-center pl-5 py-2 lg:gap-5 gap-3">
                   <div>Get template</div>
                   <div className="h-[30px] w-[30px] bg-white rounded-full flex items-center justify-center mr-2">
-                    <img src="/right-arrow.svg" className="h-[20px] w-[20px]" />
+                    <img
+                      src="/right-arrow.svg"
+                      alt="right-arrow"
+                      className="h-[20px] w-[20px]"
+                    />
                   </div>
                 </div>
               </div>

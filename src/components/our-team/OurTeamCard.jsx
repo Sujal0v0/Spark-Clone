@@ -4,7 +4,7 @@ const OurTeamCard = ({ position, name, description, imgLocation }) => {
       <div>
         <img
           src={imgLocation}
-          alt=""
+          alt={name}
           className="sm:h-[340px] xs:h-[300px] xs:w-full w-[200px] sm:p-6 xs:p-4 p-2"
         />
       </div>
