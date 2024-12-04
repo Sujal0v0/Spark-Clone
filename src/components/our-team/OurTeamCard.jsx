@@ -12,7 +12,11 @@ const OurTeamCard = ({ position, name, description, imgLocation }) => {
         <div className="md:text-base text-sm font-light">{position}</div>
         <div className="md:text-xl text-lg font-semibold">{name}</div>
         <div className="md:text-base text-sm font-light">{description}</div>
-        <a href="#!" className="me-6 [&>svg]:h-6 [&>svg]:w-6">
+        <a
+          href="#!"
+          className="me-6 [&>svg]:h-6 [&>svg]:w-6"
+          aria-label="linkedin"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="#000000"
