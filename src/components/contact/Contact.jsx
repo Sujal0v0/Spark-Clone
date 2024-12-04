@@ -14,7 +14,11 @@ const Contact = () => {
         <div className="bg-white text-black text-base font-medium rounded-full flex items-center justify-center pl-5 py-2 gap-5">
           Book a Call
           <div className="h-[42px] w-[42px] bg-black rounded-full flex items-center justify-center mr-2 p-[0.90rem]">
-            <img src="/right-arrow-white.svg" className="h-[20px] w-[20px]" />
+            <img
+              src="/right-arrow-white.svg"
+              alt="right-arrow"
+              className="h-[20px] w-[20px]"
+            />
           </div>
         </div>
       </div>
